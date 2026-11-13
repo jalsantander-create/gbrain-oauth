@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GBrain Connector</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    max-width: 46rem;
+    margin-inline: auto;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .sub { margin: 0 0 2.5rem; color: #555; font-size: 1.05rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .box {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin: 1.5rem 0;
+    background: #fafafa;
+  }
+  a { color: #0b57d0; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e3e3e3; font-size: .9rem; color: #666; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8eaed; background: #17181a; }
+    .sub, footer { color: #a0a4a8; }
+    .box { background: #202124; border-color: #33363a; }
+    a { color: #8ab4f8; }
+    footer { border-color: #33363a; }
+  }
+</style>
+</head>
+<body>
+
+<h1>GBrain Connector</h1>
+<p class="sub">Aplicación de uso personal para indexar correo electrónico en un sistema local de gestión de conocimiento.</p>
+
+<div class="box">
+  <strong>Qué hace.</strong> Conecta la cuenta de Google de su titular con GBrain, el sistema local de
+  conocimiento que se ejecuta en su propio equipo, para que el correo pueda buscarse y consultarse desde ahí.
+</div>
+
+<h2>Qué permisos solicita</h2>
+<ul>
+  <li><strong>Lectura de correo</strong> (<code>gmail.readonly</code>): leer mensajes para construir el índice local.</li>
+  <li><strong>Identificación básica</strong> (<code>openid</code>, <code>email</code>): saber a qué cuenta pertenece la autorización.</li>
+</ul>
+<p>No solicita permiso para enviar, modificar ni borrar correo, ni para acceder a Drive, Contactos o Calendar.</p>
+
+<h2>Dónde van los datos</h2>
+<p>Se quedan en el equipo del titular, en un índice local cifrado. No se envían a servidores de terceros
+ni se comparten con nadie.</p>
+
+<h2>Política de privacidad</h2>
+<p>El detalle completo del tratamiento, la conservación y los derechos está en
+<a href="./privacy.html">la política de privacidad</a>.</p>
+
+<footer>
+  Titular del proyecto de Google Cloud 794206841981 · Última actualización: 13 de noviembre de 2026
+</footer>
+
+</body>
+</html>
